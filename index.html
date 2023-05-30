@@ -8,12 +8,12 @@
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
     <style>
-        #wrapper {
+        /* #wrapper {
             text-align:left;
-            /* border:1px solid #ccc; 
-            background-color:#f0f0f0; */
+            border:1px solid #ccc; 
+            background-color:#f0f0f0;
             display: none;
-        }
+        } */
         li + li {
             margin-top: 10pt;
         }
@@ -26,7 +26,6 @@
             font-size: small;
         }
     </style>
-    <script type="text/javascript" src="MathJax/MathJax.js?config=default"></script>
     <script type="text/javascript">
         function switchMenu(obj) {
 	        var el = document.getElementById(obj);
@@ -38,6 +37,7 @@
 	        }
         }
     </script>
+    
 </head>
 
 <body>
@@ -60,7 +60,7 @@
     column vector \(B\), then it has a unique solution for all \(B\).</li>
     <li> <b>M.4:</b> Show that the equation \(AB - BA = I\) has no solution in real \(n \times n\) matrices \(A\) and \(B\).<br>
     <a onclick="switchMenu('proof1');"><b>Solution. </b>(Click to Expand/Collapse)</a>
-    <div id="proof1"><div id="wrapper">
+    <div id="proof1"; style="display:none;">
         <sol>Take trace of both sides.</sol>
     </div>
     </li>
