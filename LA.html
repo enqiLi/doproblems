@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <title>Linear Algebra</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* #wrapper {
+            text-align:left;
+            border:1px solid #ccc; 
+            background-color:#f0f0f0;
+            display: none;
+        } */
+        li + li {
+            margin-top: 10pt;
+        }
+        a {
+            color:blue;
+            cursor:pointer;
+            font-size: small;
+        }
+        sol {
+            font-size: small;
+        }
+    </style>
+    <script type="text/javascript">
+        function switchMenu(obj) {
+	        var el = document.getElementById(obj);
+	        if ( el.style.display == "none" ) {
+		        el.style.display = '';
+	        }
+	        else {
+		        el.style.display = 'none';
+	        }
+        }
+    </script>
+    <script src="nav.js"></script>
+
+</head>
+
+<body>
+<ul>
+    <li> <b>1.6:</b> Compute \(\begin{pmatrix} 1 & a \\ & 1 \end{pmatrix}\) \(\begin{pmatrix} 1 & b \\ & 1 \end{pmatrix}\)
+    and \(\begin{pmatrix} 1 & a \\ & 1 \end{pmatrix}^n\).</li>
+    <li> <b>1.7:</b> Find a formula for \(\begin{pmatrix} 1 & 1 & 1 \\ & 1 & 1 \\ & & 1 \end{pmatrix}^n\), and prove it by induction.</li>
+    <li> <b>1.10:</b> Let \(D\) be the diagonal matrix with diagonal entries \(d_1, \cdots, d_n\), and let \(A = (a_{ij})\)
+    be an arbitrary \(n \times n\) matrix. Compute the products \(DA\) and \(AD\).</li>
+    <li> <b>2.3:</b> Find all solutions of the equation \(x_1 + x_2 + 2x_3 - x_4 = 3\).</li>
+    <li> <b>2.9:</b> Consider an arbitrary system of linear equations \(AX = B\), where \(A\) and \(B\) are real matrices.
+    <ol style="list-style-type:lower-alpha">
+        <li> Prove that if the system of equations \(AX = B\) has more than one solution, then it has infinitely many.</li>
+        <li> Prove that if there is a solution in the complex numbers, then there is also a real solution. </li>
+    </ol>
+    </li>
+    <li> <b>2.10:</b> Let \(A\) be a square matrix. Show that if the system \(AX = B\) has a unique solution for some particular 
+    column vector \(B\), then it has a unique solution for all \(B\).</li>
+    <li> <b>M.4:</b> Show that the equation \(AB - BA = I\) has no solution in real \(n \times n\) matrices \(A\) and \(B\).<br>
+    <a onclick="switchMenu('proof1');"><b>Solution. </b>(Click to Expand/Collapse)</a>
+    <div id="proof1"; style="display:none;">
+        <sol>Take trace of both sides.</sol>
+    </div>
+    </li>
+
+</ul>
+</body>
+
+</html>
