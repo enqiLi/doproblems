@@ -17,10 +17,12 @@ navlist.forEach((link) => {
     }
 });
 
-let items = Array.from(list).map(elem => {
-  elem.classList.contains("active");
-})
+let nothingSelected = true
 
-if (items.every(item => !item)) {
+navlist.forEach((link) => { 
+    nothingSelected = nothingSelected && !link.classList.contains("active")
+});
+
+if (nothingSelected) {
     navlist.item(0).classList.add("active");
 }
