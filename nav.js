@@ -6,10 +6,17 @@ document.write('<div class="topnav">\
 <a class="nav-link" href="topology.html">Topology</a>\
 </div>\
 ');
-document.querySelectorAll(".nav-link").forEach((link) => {
-    link.classList.remove("active")
+
+let navlist = document.querySelectorAll(".nav-link");
+
+navlist.forEach((link) => {
+    // link.classList.remove("active")
     if (link.href === window.location.href) {
-        link.classList.add("active");
+        link.classList.toggle("active");
         link.setAttribute("aria-current", "page");
     }
 });
+
+// let items = Array.from(list).map(elem => {
+//   elem.classList.contains("active")
+// })
