@@ -22,5 +22,5 @@ let items = Array.from(list).map(elem => {
 })
 
 if (items.every(item => !item)) {
-    navlist.item(0).add("active")
+    navlist.item(0).classList.add("active")
 }
