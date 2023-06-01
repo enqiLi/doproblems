@@ -10,13 +10,17 @@ document.write('<div class="topnav">\
 let navlist = document.querySelectorAll(".nav-link");
 
 navlist.forEach((link) => {
-    // link.classList.remove("active")
+    link.classList.remove("active")
     if (link.href === window.location.href) {
-        link.classList.toggle("active");
+        link.classList.add("active");
         link.setAttribute("aria-current", "page");
     }
 });
 
-// let items = Array.from(list).map(elem => {
-//   elem.classList.contains("active")
-// })
+let items = Array.from(list).map(elem => {
+  elem.classList.contains("active")
+})
+
+if (items.every(item => !item)) {
+    navlist.item(0).add("active")
+}
