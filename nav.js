@@ -18,9 +18,9 @@ navlist.forEach((link) => {
 });
 
 let items = Array.from(list).map(elem => {
-  elem.classList.contains("active")
+  elem.classList.contains("active");
 })
 
 if (items.every(item => !item)) {
-    navlist.item(0).classList.add("active")
+    navlist.item(0).classList.add("active");
 }
